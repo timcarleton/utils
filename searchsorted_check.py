@@ -6,7 +6,6 @@ def searchsorted_check(a,v,side='left', sorter=None):
     w1=np.where(result<len(a))[0]
     w2=np.where(v[w1]==np.array(a)[result[w1]])[0]
 
-    print(w1,w2,result)
     return w1[w2],result[w1[w2]]
 
 def searchsorted_check_default(a,v,side='left', sorter=None,nomatch=-1):
